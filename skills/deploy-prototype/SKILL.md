@@ -4,7 +4,7 @@ category: core
 description: Generate a small app or tool and deploy it live to Vercel via API
 var: ""
 tags: [dev, build]
-requires: [VERCEL_TOKEN, GH_GLOBAL]
+requires: [VERCEL_TOKEN, GH_GLOBAL?]
 ---
 <!-- autoresearch: variation B — sharper output via prototype quality bar + self-check + signal-anchored record -->
 
