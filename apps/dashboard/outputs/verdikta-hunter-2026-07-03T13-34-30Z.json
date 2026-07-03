@@ -1,0 +1,252 @@
+{
+  "root": "main-card",
+  "state": {},
+  "elements": {
+    "main-card": {
+      "type": "Card",
+      "props": {
+        "title": "Verdikta Hunter — Dry-run on #102, Refused"
+      },
+      "children": [
+        "alert-section",
+        "sep1",
+        "bounty-section",
+        "sep2",
+        "limitation-section",
+        "sep3",
+        "status-section",
+        "sep4",
+        "next-steps"
+      ]
+    },
+    "alert-section": {
+      "type": "Alert",
+      "props": {
+        "title": "Bounty Refused",
+        "message": "Dry-run on #102 refused due to capability limitations. No report written, nothing queued, no spend.",
+        "type": "warning"
+      }
+    },
+    "sep1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "bounty-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-heading",
+        "bounty-stack"
+      ]
+    },
+    "bounty-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Open Bounty: #102",
+        "level": "h3"
+      }
+    },
+    "bounty-stack": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "bounty-reward",
+        "bounty-threshold",
+        "bounty-task"
+      ]
+    },
+    "bounty-reward": {
+      "type": "Stat",
+      "props": {
+        "label": "Reward",
+        "value": "0.003 ETH",
+        "delta": "$7.50"
+      }
+    },
+    "bounty-threshold": {
+      "type": "Text",
+      "props": {
+        "text": "Threshold: 85",
+        "variant": "body"
+      }
+    },
+    "bounty-task": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "task-label",
+        "task-text"
+      ]
+    },
+    "task-label": {
+      "type": "Text",
+      "props": {
+        "text": "Task:",
+        "variant": "lead"
+      }
+    },
+    "task-text": {
+      "type": "Text",
+      "props": {
+        "text": "Post a live public X/Twitter reply to a specific thread, mentioning @verdikta19633, and submit the reply URL as proof.",
+        "variant": "body"
+      }
+    },
+    "sep2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "limitation-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "limitation-heading",
+        "limitation-reason",
+        "available-keys"
+      ]
+    },
+    "limitation-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Why Refused",
+        "level": "h3"
+      }
+    },
+    "limitation-reason": {
+      "type": "Text",
+      "props": {
+        "text": "This skill cannot post to X/Twitter — it requires a real X/Twitter account and social posting capability. Only credential types available: VERDIKTA_API_KEY and VERDIKTA_WALLET_KEY. Rather than fabricate a reply URL to clear the must-pass gate, the bounty was refused.",
+        "variant": "body"
+      }
+    },
+    "available-keys": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "keys-label",
+        "key-1",
+        "key-2"
+      ]
+    },
+    "keys-label": {
+      "type": "Text",
+      "props": {
+        "text": "Available credentials:",
+        "variant": "caption"
+      }
+    },
+    "key-1": {
+      "type": "Badge",
+      "props": {
+        "text": "VERDIKTA_API_KEY",
+        "variant": "outline"
+      }
+    },
+    "key-2": {
+      "type": "Badge",
+      "props": {
+        "text": "VERDIKTA_WALLET_KEY",
+        "variant": "outline"
+      }
+    },
+    "sep3": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status-section": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "status-heading",
+        "status-items"
+      ]
+    },
+    "status-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "Status",
+        "level": "h3"
+      }
+    },
+    "status-items": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "sm"
+      },
+      "children": [
+        "status-item-1",
+        "status-item-2"
+      ]
+    },
+    "status-item-1": {
+      "type": "Badge",
+      "props": {
+        "text": "No prior submissions tracked",
+        "variant": "outline"
+      }
+    },
+    "status-item-2": {
+      "type": "Badge",
+      "props": {
+        "text": "Nothing else to shortlist",
+        "variant": "outline"
+      }
+    },
+    "sep4": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "next-steps": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "next-heading",
+        "next-text"
+      ]
+    },
+    "next-heading": {
+      "type": "Heading",
+      "props": {
+        "text": "To Proceed",
+        "level": "h3"
+      }
+    },
+    "next-text": {
+      "type": "Text",
+      "props": {
+        "text": "This bounty requires a human or separately-authorized X-posting integration to post the reply. After posting, feed the live URL back for submission and reporting.",
+        "variant": "body"
+      }
+    }
+  }
+}
