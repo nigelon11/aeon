@@ -1,0 +1,32 @@
+{
+  "root": "card-main",
+  "state": {},
+  "elements": {
+    "card-main": {
+      "type": "Card",
+      "props": {
+        "title": "heartbeat"
+      },
+      "children": [
+        "alert-1",
+        "alert-2"
+      ]
+    },
+    "alert-1": {
+      "type": "Alert",
+      "props": {
+        "type": "error",
+        "title": "SELF-CHECK",
+        "message": "heartbeat has never run via the scheduler (cron-state.json empty — verify GitHub Actions schedule is active)"
+      }
+    },
+    "alert-2": {
+      "type": "Alert",
+      "props": {
+        "type": "info",
+        "title": "MEMORY",
+        "message": "Setup tasks pending — configure notification channels, run first digest"
+      }
+    }
+  }
+}

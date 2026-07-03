@@ -1,0 +1,3 @@
+🔴 SELF-CHECK: heartbeat has never run via the scheduler (cron-state.json empty — verify GitHub Actions schedule is active)
+
+🔵 MEMORY: Setup tasks pending — configure notification channels, run first digest
