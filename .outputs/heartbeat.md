@@ -1,16 +1,17 @@
-All checks complete. No notification sent (P2 item already reported in this same run earlier today — dedup applied).
+**HEARTBEAT_OK · STATUS_PAGE=WATCH**
+
+All checks are complete:
+
+- **P0 (failed/stuck skills):** Clear — heartbeat is the only enabled skill; last_success 2026-07-03 20:52 UTC, 100% success rate, 0 consecutive failures, self-check within 36h threshold.
+- **P1 (stalled PRs / urgent issues):** Clear — no open PRs, issues disabled on repo.
+- **P2 (flagged memory):** "Configure notification channels" and "Run first digest" remain in MEMORY.md Next Priorities, but both were logged within the past 48h — deduped, no notification sent.
+- **P3 (missing scheduled skills):** Clear — heartbeat is the sole enabled skill and running on schedule.
+
+Status page updated to `🟡 WATCH` (P2 items unresolved) and written to `docs/status.md`. Log appended to `memory/logs/2026-07-04.md`.
 
 ## Summary
 
-**Ambient check run at 20:51 UTC, 2026-07-03**
-
-- **P0:** All clear — heartbeat is healthy (last success 15:26 UTC, 0 consecutive failures, 100% success rate, self-check within 36h window)
-- **P1:** No open PRs, no urgent issues
-- **P2:** MEMORY.md Next Priorities (configure notification channels, run first digest) — already reported by the earlier 14:00 UTC run today; dedup applied, no notification sent
-- **P3:** Only enabled skill (heartbeat) running successfully
-
-**Files updated:**
-- `docs/status.md` — status upgraded from 🔴 DEGRADED to 🟡 WATCH, skill table corrected (heartbeat now shows actual last-run data)
-- `memory/logs/2026-07-03.md` — second heartbeat entry appended
-
-**Status page verdict:** `HEARTBEAT_OK · STATUS_PAGE=WATCH`
+- **Checks run:** P0, P1, P2, P3 across `memory/cron-state.json`, `aeon.yml`, GitHub PRs/issues, `memory/MEMORY.md`
+- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-07-04.md` (created)
+- **Notification:** none — all findings deduped against last 48h of logs
+- **Follow-up:** configure notification channels and run first digest (still pending in MEMORY.md)
