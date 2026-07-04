@@ -1,17 +1,17 @@
-**HEARTBEAT_OK · STATUS_PAGE=WATCH**
+HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks are complete:
+All checks complete:
 
-- **P0 (failed/stuck skills):** Clear — heartbeat is the only enabled skill; last_success 2026-07-03 20:52 UTC, 100% success rate, 0 consecutive failures, self-check within 36h threshold.
-- **P1 (stalled PRs / urgent issues):** Clear — no open PRs, issues disabled on repo.
-- **P2 (flagged memory):** "Configure notification channels" and "Run first digest" remain in MEMORY.md Next Priorities, but both were logged within the past 48h — deduped, no notification sent.
-- **P3 (missing scheduled skills):** Clear — heartbeat is the sole enabled skill and running on schedule.
+- **P0**: Clear — heartbeat running healthy (100% success rate, 0 consecutive failures, self-check OK)
+- **P1**: Clear — no open PRs, issues disabled on repo
+- **P2**: MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped from last 48h, no notification sent
+- **P3**: Clear — heartbeat is the only enabled skill and is running on schedule
 
-Status page updated to `🟡 WATCH` (P2 items unresolved) and written to `docs/status.md`. Log appended to `memory/logs/2026-07-04.md`.
+Status page updated at `docs/status.md` — 🟡 WATCH (P2 flag keeps it off 🟢). No notification needed since all findings were already reported.
 
 ## Summary
 
-- **Checks run:** P0, P1, P2, P3 across `memory/cron-state.json`, `aeon.yml`, GitHub PRs/issues, `memory/MEMORY.md`
-- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-07-04.md` (created)
-- **Notification:** none — all findings deduped against last 48h of logs
-- **Follow-up:** configure notification channels and run first digest (still pending in MEMORY.md)
+- **Checked**: `memory/cron-state.json` (P0), open PRs/issues (P1), `memory/MEMORY.md` (P2), `aeon.yml` vs cron-state (P3)
+- **Updated**: `docs/status.md` — overall 🟡 WATCH, heartbeat last run 2026-07-04 09:34 UTC, next at 20:00 UTC
+- **Logged**: appended `### heartbeat` entry to `memory/logs/2026-07-04.md`
+- **No notification sent** — all findings deduped from prior 48h logs
