@@ -1,15 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
+All checks passed. Fleet is clean — `docs/status.md` updated (🟡 WATCH due to unconfigured notification channels in MEMORY.md Next Priorities, which continues to dedup). No notification sent.
+
 ## Summary
 
-**Ambient check complete — nothing new to report.**
-
-- **P0**: Clear. Heartbeat `last_success=2026-07-08 15:20 UTC`, `success_rate=100%`, `consecutive_failures=0`. Self-check OK.
-- **P1**: Clear. No open PRs; issues disabled on repo.
-- **P2**: MEMORY.md "Next Priorities" items (configure notification channels, run first digest) — deduped (present in all recent logs), no notification sent.
-- **P3**: Clear. Heartbeat is the only enabled skill and is running on schedule.
-- **No token-report files** found; no open issues in INDEX.md.
-
-**Files updated:**
-- `docs/status.md` — regenerated with overall `🟡 WATCH`, updated timestamp `2026-07-08 21:19 UTC`, next run `08:00 UTC`
-- `memory/logs/2026-07-08.md` — third heartbeat entry appended for this run
+- **P0–P3:** All clear. Heartbeat is the only enabled skill; 16/16 runs successful, last run ~11h ago.
+- **Status page:** Updated `docs/status.md` — Overall 🟡 WATCH (P2: MEMORY.md next-priorities items still unresolved), next run at 14:00 UTC.
+- **Log:** Appended entry to `memory/logs/2026-07-09.md`.
+- **No notification sent** — nothing new to surface (P2 items deduped, appeared in every log entry for the past 48h+).
