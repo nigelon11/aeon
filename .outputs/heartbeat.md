@@ -2,8 +2,10 @@ HEARTBEAT_OK · STATUS_PAGE=WATCH
 
 ## Summary
 
-- **Ran ambient fleet check** (empty `${var}`)
-- **P0–P3:** All clear. Heartbeat is the only enabled skill; 23/23 runs successful, no failures, self-check OK.
-- **P2 deduped:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) have appeared in every log for the last 2+ days — no notification sent.
-- **Status page:** Regenerated `docs/status.md` — `🟡 WATCH` (P2 flag persists). Updated timestamp to 2026-07-11 14:00 UTC, next run at 20:00 UTC.
-- **Log:** Appended `### heartbeat` entry to `memory/logs/2026-07-11.md`.
+- **P0**: Clear — heartbeat is the only enabled skill; last_success 2026-07-11 14:11 UTC, 24/24 runs, 0 consecutive failures, self-check OK.
+- **P1**: Clear — no open PRs, GitHub issues disabled.
+- **P2**: MEMORY.md has unconfigured "Next Priorities" items (notification channels, first digest), but this has appeared in logs for the past 48h+ — deduped, no notification sent.
+- **P3**: Clear — heartbeat is the only enabled skill and running on schedule.
+- **No token-report files** — Token pulse section omitted from status page.
+- **docs/status.md** regenerated: 🟡 WATCH (P2 flag for unconfigured notification channels), updated timestamp 2026-07-11 14:12 UTC.
+- **memory/logs/2026-07-11.md** updated with this run's entry.
