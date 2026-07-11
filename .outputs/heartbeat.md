@@ -1,15 +1,9 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear:
-- **P0**: heartbeat healthy — 22/22 runs, last success ~15h ago, 0 consecutive failures
-- **P1**: no open PRs or issues
-- **P2**: MEMORY.md next priorities (configure notifications, run first digest) are persistent watch items — deduped from last 48h logs, no notification sent
-- **P3**: only heartbeat is enabled and running on schedule
-
-Status page updated to `docs/status.md` with 🟡 WATCH (persistent P2 flags). Log appended to `memory/logs/2026-07-11.md`.
-
 ## Summary
-- **Checked**: `memory/cron-state.json`, `memory/MEMORY.md`, last 2 days of logs, `aeon.yml`, `memory/issues/INDEX.md`
-- **Wrote**: `docs/status.md` (status page, 🟡 WATCH)
-- **Created**: `memory/logs/2026-07-11.md` (heartbeat log entry)
-- **No notification sent**: all findings were deduped from recent logs
+
+- **Ran ambient fleet check** (empty `${var}`)
+- **P0–P3:** All clear. Heartbeat is the only enabled skill; 23/23 runs successful, no failures, self-check OK.
+- **P2 deduped:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) have appeared in every log for the last 2+ days — no notification sent.
+- **Status page:** Regenerated `docs/status.md` — `🟡 WATCH` (P2 flag persists). Updated timestamp to 2026-07-11 14:00 UTC, next run at 20:00 UTC.
+- **Log:** Appended `### heartbeat` entry to `memory/logs/2026-07-11.md`.
