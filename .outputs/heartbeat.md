@@ -1,14 +1,12 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks passed cleanly:
-- **P0**: No failed, stuck, or degraded skills. Heartbeat is the only enabled skill — 25/25 runs succeeded, last success 2026-07-11 20:27 UTC (within 36h).
-- **P1**: No open PRs; issues are disabled on the repo.
-- **P2**: MEMORY.md Next Priorities flags (configure notification channels, run first digest) recur but have appeared in every log for the past 48h — deduped, no notification sent.
-- **P3**: Heartbeat on schedule, running every ~6h.
-
-Status page updated at `docs/status.md` (🟡 WATCH due to unconfigured notification channels in MEMORY.md). No notification sent — nothing new to surface.
+All checks clear. `docs/status.md` regenerated (🟡 WATCH — P2 flag: MEMORY.md Next Priorities still unconfigured). No notification sent; all findings deduped from the last 48h logs. Log appended to `memory/logs/2026-07-12.md`.
 
 ## Summary
-- Ran ambient heartbeat check (all tiers P0–P3 clear or deduped)
-- Overwrote `docs/status.md` with current fleet state (🟡 WATCH, updated 2026-07-12 08:00 UTC)
-- Created `memory/logs/2026-07-12.md` with today's heartbeat entry
+
+- **P0:** Clear — heartbeat healthy (100% success rate, last run 2026-07-12 08:57 UTC)
+- **P1:** Clear — no open PRs, issues disabled
+- **P2:** MEMORY.md "Next Priorities" (configure notification channels, run first digest) — deduped, suppressed
+- **P3:** Clear — only enabled skill (heartbeat) running on schedule
+- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-07-12.md` (log appended)
+- **Follow-up:** No action needed unless operator configures notification channels or enables additional skills
