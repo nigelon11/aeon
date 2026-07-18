@@ -1,16 +1,16 @@
+HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
+
 ## Summary
 
-Ran the **ambient heartbeat** (default `${var}` = empty) at the 14:00 UTC slot on 2026-07-18.
+**Ambient check complete (var: empty — scheduled 20:00 UTC run).**
 
-**Checks:**
-- **P0:** Clear — heartbeat is the only skill in cron-state.json; 43/43 runs successful, last success 08:14 UTC today, self-check OK
-- **P1:** Clear — no open PRs, issues disabled on repo
-- **P2:** MEMORY.md priorities (configure notifications, run first digest) present but deduped from last 48h logs — no notification sent
-- **P3:** Clear — heartbeat (only enabled skill) running on schedule
+- **P0:** Clear — heartbeat is the only enabled skill; `last_success=2026-07-18 14:11 UTC`, `consecutive_failures=0`, `success_rate=100%`. Self-check OK.
+- **P1:** Clear — no open PRs; issues are disabled on the repo.
+- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) present, but appeared in logs within the last 48h — deduped, no notification sent.
+- **P3:** Clear — heartbeat running on schedule; next cron at 08:00 UTC 2026-07-19.
+- **Token pulse:** No `articles/token-report-*.md` files; section omitted.
+- **Open issues:** None.
 
-**Actions taken:**
-- Regenerated `docs/status.md` → 🟡 WATCH (P2 flag: unconfigured next-priorities)
-- Appended log entry to `memory/logs/2026-07-18.md`
-- No notification sent (nothing new to surface)
-
-**HEARTBEAT_OK · STATUS_PAGE=WATCH**
+**Files modified:**
+- `docs/status.md` — regenerated (overall: 🟡 WATCH, next run: 08:00 UTC 2026-07-19)
+- `memory/logs/2026-07-18.md` — appended heartbeat log entry
