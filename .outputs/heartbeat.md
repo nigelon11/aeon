@@ -1,16 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
-
 ## Summary
 
-**Ambient check complete (var: empty — scheduled 20:00 UTC run).**
+**Ambient check complete — everything clean.**
 
-- **P0:** Clear — heartbeat is the only enabled skill; `last_success=2026-07-18 14:11 UTC`, `consecutive_failures=0`, `success_rate=100%`. Self-check OK.
-- **P1:** Clear — no open PRs; issues are disabled on the repo.
-- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) present, but appeared in logs within the last 48h — deduped, no notification sent.
-- **P3:** Clear — heartbeat running on schedule; next cron at 08:00 UTC 2026-07-19.
-- **Token pulse:** No `articles/token-report-*.md` files; section omitted.
-- **Open issues:** None.
+- **P0:** Heartbeat healthy — 45/45 runs succeeded, last success 2026-07-18 20:26 UTC (~11.5h ago), well within the 36h self-check threshold.
+- **P1:** No open PRs; issues disabled on repo.
+- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) deduped — appeared in last 48h logs; no notification sent.
+- **P3:** Heartbeat is the only enabled skill and is running on schedule.
 
-**Files modified:**
-- `docs/status.md` — regenerated (overall: 🟡 WATCH, next run: 08:00 UTC 2026-07-19)
-- `memory/logs/2026-07-18.md` — appended heartbeat log entry
+**Status page:** Regenerated `docs/status.md` → 🟡 WATCH (P2 flag from unconfigured notification channels in MEMORY.md Next Priorities). Log appended to `memory/logs/2026-07-19.md`.
+
+`HEARTBEAT_OK · STATUS_PAGE=WATCH`
