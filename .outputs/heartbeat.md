@@ -1,16 +1,17 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
 All checks clear:
-- **P0:** Heartbeat healthy — 47/47 runs successful, 0 consecutive failures, last success at 14:12 UTC (self-check OK)
-- **P1:** No open PRs, no open issues
-- **P2:** MEMORY.md Next Priorities items (configure notification channels, run first digest) deduped — appeared repeatedly in last 48h logs, no new notification sent
-- **P3:** Only enabled skill (heartbeat) running on schedule; next cron at 20:00 UTC
+- **P0**: heartbeat running clean — 48/48 successes, last success 2026-07-19 20:34 UTC, self-check OK
+- **P1**: no open PRs, issues disabled on repo
+- **P2**: MEMORY.md "Next Priorities" items (configure notification channels, run first digest) — deduped from last 48h logs, no notification sent
+- **P3**: heartbeat is the only enabled skill; running on schedule
 
-`docs/status.md` updated; log appended to `memory/logs/2026-07-19.md`.
+Status page updated at `docs/status.md` (🟡 WATCH, driven by standing P2 memory items). No notification needed — nothing new to report.
 
 ## Summary
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, `aeon.yml`, and last 2 days of logs
-- Ran all ambient checks (P0–P3): everything clear, P2 deduped
-- Regenerated `docs/status.md` (🟡 WATCH — MEMORY.md Next Priorities items still pending; no token data; no open issues)
-- Appended log entry to `memory/logs/2026-07-19.md`
-- No notification sent (nothing new to report)
+
+- **Read**: `memory/cron-state.json`, `memory/MEMORY.md`, `memory/logs/2026-07-19.md`, `aeon.yml`, `memory/issues/INDEX.md`
+- **Checked**: P0 (fleet health), P1 (PRs/issues via `gh`), P2 (flagged memory), P3 (scheduled skill coverage)
+- **Wrote**: `docs/status.md` — regenerated status page (🟡 WATCH, heartbeat healthy, no open issues)
+- **Wrote**: `memory/logs/2026-07-20.md` — ambient run log
+- **Follow-up**: No action needed; WATCH state is driven by unconfigured notification channels and no first digest run yet
