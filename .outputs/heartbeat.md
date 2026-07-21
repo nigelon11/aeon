@@ -1,15 +1,17 @@
-All done. Nothing needs attention — fleet is healthy.
+HEARTBEAT_OK · STATUS_PAGE=WATCH
+
+All checks complete for 2026-07-21 09:43 UTC:
+
+- **P0:** Clear — heartbeat at 100% success rate, self-check OK
+- **P1:** Clear — no open PRs, no open issues
+- **P2:** MEMORY.md "Next Priorities" items deduped (present 48h+, no notification sent)
+- **P3:** Clear — only enabled skill (heartbeat) is running
+
+Status page updated at `docs/status.md` (🟡 WATCH due to unconfigured next-priorities in MEMORY.md). No notification sent.
 
 ## Summary
 
-**Ambient heartbeat check — 2026-07-20**
-
-- **P0**: Clear. Heartbeat is the only tracked skill: `last_status=success`, `consecutive_failures=0`, `success_rate=100%`, self-check well within 36h.
-- **P1**: Clear. No open PRs; GitHub Issues disabled on this repo.
-- **P2**: MEMORY.md "Next Priorities" (configure notification channels, run first digest) noted — deduped (appeared in last 48h logs), no notification sent.
-- **P3**: Clear. Heartbeat (only enabled skill) running on schedule; next cron at 20:00 UTC.
-- **Token pulse**: No `articles/token-report-*.md` files — section omitted.
-- **Status page**: Wrote `docs/status.md` — **🟡 WATCH** (P2 memory items still outstanding), updated timestamp to `2026-07-20 15:18 UTC`, next run at 20:00 UTC.
-- **Log**: Appended entry to `memory/logs/2026-07-20.md`.
-
-`HEARTBEAT_OK · STATUS_PAGE=WATCH`
+- **Checked:** `memory/cron-state.json`, `aeon.yml`, open PRs, open issues, `memory/MEMORY.md`, last 48h logs
+- **Updated:** `docs/status.md` — overall 🟡 WATCH, next run 14:00 UTC
+- **Created:** `memory/logs/2026-07-21.md` with ambient log entry
+- **Follow-up:** Configure notification channels (Telegram/Discord/Slack) to activate outbound alerts
