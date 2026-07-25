@@ -1,15 +1,16 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
-
-All checks clear:
-- **P0**: Heartbeat running perfectly — 64 runs, 100% success rate, last success 2026-07-25 08:52 UTC, no consecutive failures.
-- **P1**: No open PRs; issues disabled on repo.
-- **P2**: MEMORY.md "Next Priorities" (configure notification channels, run first digest) — deduped, appeared in last 48h logs repeatedly, no notification sent.
-- **P3**: Only enabled skill (heartbeat) running on schedule.
-
-`docs/status.md` updated (🟡 WATCH, next run at 20:00 UTC). Log appended to `memory/logs/2026-07-25.md`.
+All checks passed. HEARTBEAT_OK · STATUS_PAGE=WATCH — `docs/status.md` regenerated.
 
 ## Summary
-- Read `memory/MEMORY.md`, `memory/cron-state.json`, `aeon.yml`, and last 2 days of logs.
-- P0–P3 all clear; nothing new to notify (all watch items deduped from prior 48h).
-- Regenerated `docs/status.md` with current state (🟡 WATCH — persistent MEMORY.md priorities).
-- Appended ambient run log under `### heartbeat` in `memory/logs/2026-07-25.md`.
+
+**Ambient check — 2026-07-25, run 3 of 3 (14:00 UTC slot)**
+
+- **P0 (failed/stuck skills):** Clear. Only enabled skill is `heartbeat`; `last_success=2026-07-25 14:22 UTC`, `consecutive_failures=0`, `success_rate=100%`. Self-check OK (<36h).
+- **P1 (stalled PRs / urgent issues):** Clear. No open PRs; issues disabled on this repo.
+- **P2 (flagged memory items):** MEMORY.md lists "configure notification channels" and "run first digest" under Next Priorities — both deduped (appeared in last 48h logs); no notification sent.
+- **P3 (missing scheduled skills):** Clear. Heartbeat is the only enabled skill and is running on schedule.
+
+**Status page verdict:** 🟡 WATCH (P2 flag: unconfigured notification channels remain in Next Priorities)
+
+**Files updated:**
+- `docs/status.md` — regenerated with 2026-07-25 14:22 UTC timestamp
+- `memory/logs/2026-07-25.md` — new `### heartbeat` entry appended
