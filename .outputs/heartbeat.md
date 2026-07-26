@@ -1,14 +1,16 @@
+HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
+
+All checks clear:
+- **P0:** heartbeat healthy — 100% success rate, 0 consecutive failures, last success 2026-07-26 09:36 UTC (self-check OK)
+- **P1:** no open PRs; issues disabled on repo
+- **P2:** MEMORY.md Next Priorities items (configure notifications, run first digest) deduped from last 48h — no notification sent
+- **P3:** only `heartbeat` is enabled and running on schedule; next run at 20:00 UTC
+
+Status page set to 🟡 WATCH (P2 items in MEMORY.md remain). No notification sent.
+
 ## Summary
 
-**Heartbeat — ambient check — 2026-07-26 09:35 UTC**
-
-- **P0 (failures/stuck):** Clear. Only enabled skill (heartbeat) shows `last_status=success`, `success_rate=100%`, 0 consecutive failures, last success ~12h53m ago (within 36h self-check window).
-- **P1 (PRs/issues):** Clear. No open PRs; GitHub issues disabled on repo.
-- **P2 (memory flags):** MEMORY.md Next Priorities ("configure notification channels", "run first digest") — both appeared in logs from the past 48h; deduped, no notification sent.
-- **P3 (missing scheduled skills):** Clear. Heartbeat is the only enabled skill and is running on schedule.
-
-**Status page:** 🟡 WATCH (P2 memory flag; no new signals).
-
-Files modified:
-- `docs/status.md` — regenerated with 2026-07-26 09:35 UTC timestamp, next run at 14:00 UTC
-- `memory/logs/2026-07-26.md` — created with today's heartbeat log entry
+- **Ran:** ambient heartbeat check (scheduled 14:00 UTC)
+- **Modified:** `docs/status.md` — updated timestamp, last-run row for heartbeat (09:36 UTC), next run 20:00 UTC
+- **Appended:** `memory/logs/2026-07-26.md` — new `### heartbeat` entry with `mode: ambient` discriminator
+- **Follow-up:** none — all findings are recurring/deduped; configure notification channels to unlock alert delivery
