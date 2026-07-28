@@ -1,16 +1,10 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
+HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-**Checks summary:**
-- **P0**: Clear — heartbeat last success 2026-07-27 20:07 UTC, 100% success rate (72/72), 0 consecutive failures, self-check OK
-- **P1**: Clear — no open PRs, no open issues
-- **P2**: MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped from last 48h logs, no notification sent
-- **P3**: Clear — heartbeat is the only enabled skill and is running on schedule
-- **Token pulse**: No `articles/token-report-*.md` files present; section omitted
-- **Status page**: 🟡 WATCH (P2 memory items flagged); next run at 14:00 UTC
+All checks clear. `docs/status.md` regenerated with updated timestamp (2026-07-28 09:49 UTC) and current heartbeat metrics (73/73 runs, 100% success rate). No notification sent — P2 memory items (configure notifications, run first digest) remain in MEMORY.md but have been consistently deduped across the last 48h of logs.
 
 ## Summary
 
-- Read `memory/MEMORY.md`, `memory/logs/2026-07-27.md`, and `memory/cron-state.json`
-- Ran all P0–P3 ambient checks; all clear (P2 memory items deduped)
-- Wrote `docs/status.md` with 🟡 WATCH verdict
-- Created `memory/logs/2026-07-28.md` with `### heartbeat` entry
+- **P0–P3:** All clear. Only enabled skill (`heartbeat`) is healthy.
+- **docs/status.md:** Regenerated with 🟡 WATCH verdict (P2 memory items pending).
+- **memory/logs/2026-07-28.md:** Appended `### heartbeat` log entry with `mode: ambient`.
+- **No notification sent** — no new signal; P2 items deduped.
