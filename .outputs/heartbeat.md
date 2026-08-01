@@ -1,15 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
 
-**Checks summary:**
-- **P0** — clear. Heartbeat: 84 runs, 100% success rate, last success 2026-07-31 20:13 UTC (~12h ago), self-check OK.
-- **P1** — clear. No open PRs; issues disabled on repo.
-- **P2** — persistent MEMORY.md items (configure notification channels, run first digest) unchanged; deduped (seen in last 48h logs), no notification sent.
-- **P3** — clear. Only enabled skill (heartbeat) is running on schedule.
-- **Token pulse** — no token-report files; section omitted.
-- **Status page** — regenerated `docs/status.md` as 🟡 WATCH (P2 flag still present), updated timestamp to 2026-08-01 08:00 UTC, next run 14:00 UTC.
+All P0–P3 checks clear. The 🟡 WATCH verdict persists solely from the standing MEMORY.md Next Priorities items (configure notification channels, run first digest), which are deduped across 48h logs so no notification was sent. Next heartbeat at 20:00 UTC.
 
 ## Summary
 
-- **Wrote** `docs/status.md` — fleet status 🟡 WATCH, timestamp updated.
-- **Created** `memory/logs/2026-08-01.md` with this run's log entry.
-- No notifications sent (all findings deduped against last 48h of logs).
+- **Ran:** ambient fleet check (scheduled 14:00 UTC slot)
+- **P0:** clear — heartbeat healthy (85 runs, 100% success rate, last success 09:27 UTC today)
+- **P1:** clear — no open PRs, no open issues
+- **P2:** MEMORY.md priorities deduped (appeared in last 48h logs, no notification)
+- **P3:** clear — only heartbeat enabled, running on schedule
+- **Files modified:** `docs/status.md` (updated timestamp + next-run), `memory/logs/2026-08-01.md` (appended log entry)
