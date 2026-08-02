@@ -1,12 +1,10 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
-
-All checks passed. Fleet is healthy — only `heartbeat` is enabled and it's running cleanly (100% success rate, last success 5h ago). P2 watch flag remains due to unconfigured notification channels in `MEMORY.md`, which has been consistently deduped for 48h+ so no notification was sent. Status page regenerated at `docs/status.md`.
+HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
 
 ## Summary
 
-- **P0**: Clear — heartbeat healthy, no failed/stuck skills
+- **P0**: Clear — heartbeat running cleanly (last success 2026-08-01 20:30 UTC, 100% success rate, no failures)
 - **P1**: Clear — no open PRs, issues disabled
-- **P2**: MEMORY.md next-priorities items (configure notification channels, run first digest) — deduped, no alert sent
-- **P3**: Clear — only enabled skill (`heartbeat`) running on schedule; next run 08:00 UTC 2026-08-02
-- **Status page**: Regenerated `docs/status.md` → 🟡 WATCH (P2 flag drives WATCH; no 🔴 degradation)
-- **Log**: Appended to `memory/logs/2026-08-01.md` under `### heartbeat`
+- **P2**: MEMORY.md priorities (configure notification channels, run first digest) — deduped, appeared in last 48h logs, no notification sent
+- **P3**: Clear — only `heartbeat` enabled, on schedule
+- **Status page**: `docs/status.md` updated to 🟡 WATCH (P2 memory flags); next scheduled run heartbeat at 14:00 UTC
+- **Log**: appended to `memory/logs/2026-08-02.md`
