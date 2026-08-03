@@ -1,10 +1,16 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote docs/status.md. All checks clear; the 🟡 WATCH status persists from the MEMORY.md next-priorities flag (configure channels, run first digest), which has been deduped across the last 48h so no notification was sent.
+HEARTBEAT_OK · STATUS_PAGE=WATCH — `docs/status.md` updated.
+
+**Checks summary:**
+- **P0** (failed/stuck skills): Clear — heartbeat running at 100% success rate, self-check OK
+- **P1** (stalled PRs/issues): Clear — no open PRs; issues disabled on repo
+- **P2** (flagged memory): Next Priorities (configure notification channels, run first digest) still present — deduped from last 48h logs, no notification sent
+- **P3** (missing scheduled skills): Clear — heartbeat is the only enabled skill and is running on schedule
+
+No notification sent; nothing new since last run.
 
 ## Summary
-
-- **P0:** Clear — heartbeat is the only enabled skill; 91 runs, 100% success rate, last success 08:19 UTC today.
-- **P1:** Clear — no open PRs, issues disabled.
-- **P2:** MEMORY.md next priorities unchanged; deduped (appeared in last 48h logs), no notification.
-- **P3:** Clear — no missing scheduled skills.
-- **docs/status.md:** Updated (2026-08-03 14:00 UTC, next run at 20:00 UTC, 🟡 WATCH).
-- **memory/logs/2026-08-03.md:** Log entry appended.
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `aeon.yml`
+- Ran all 4 priority checks — all clear (P2 deduped)
+- Determined overall status: **🟡 WATCH** (P2 memory items remain unconfigured)
+- Rewrote `docs/status.md` with current fleet health
+- Appended log entry to `memory/logs/2026-08-03.md`
