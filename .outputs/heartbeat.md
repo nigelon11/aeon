@@ -1,16 +1,14 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — `docs/status.md` updated.
+HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-**Checks summary:**
-- **P0** (failed/stuck skills): Clear — heartbeat running at 100% success rate, self-check OK
-- **P1** (stalled PRs/issues): Clear — no open PRs; issues disabled on repo
-- **P2** (flagged memory): Next Priorities (configure notification channels, run first digest) still present — deduped from last 48h logs, no notification sent
-- **P3** (missing scheduled skills): Clear — heartbeat is the only enabled skill and is running on schedule
+All checks clear:
+- **P0:** Heartbeat healthy — 93/93 runs, last success 2026-08-03 20:14 UTC, well within 36h self-check window.
+- **P1:** No open PRs; issue tracker empty.
+- **P2:** MEMORY.md Next Priorities items (configure notifications, run first digest) — deduped from last 48h logs, no notification sent.
+- **P3:** Heartbeat is the only enabled skill and running on schedule.
 
-No notification sent; nothing new since last run.
+Status page regenerated at `docs/status.md` (🟡 WATCH — MEMORY.md items present). No notification sent; nothing new to surface.
 
 ## Summary
-- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `aeon.yml`
-- Ran all 4 priority checks — all clear (P2 deduped)
-- Determined overall status: **🟡 WATCH** (P2 memory items remain unconfigured)
-- Rewrote `docs/status.md` with current fleet health
-- Appended log entry to `memory/logs/2026-08-03.md`
+
+- **`docs/status.md`** — regenerated with 2026-08-04 08:00 UTC timestamp, next run at 14:00 UTC
+- **`memory/logs/2026-08-04.md`** — created with today's ambient log entry
