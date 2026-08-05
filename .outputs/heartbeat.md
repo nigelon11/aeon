@@ -1,23 +1,15 @@
-All checks complete. Here's the run summary:
+HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote `docs/status.md`.
 
-**P0:** Clear — heartbeat is the only entry in cron-state.json; last_success=2026-08-05 10:00 UTC, consecutive_failures=0, success_rate=100%, self-check OK.
-
-**P1:** Clear — no open PRs; issues are disabled on this repo.
-
-**P2:** MEMORY.md "Next Priorities" (configure notification channels, run first digest) — flagged items present but both appeared in the last 48h of logs; deduped, no notification sent.
-
-**P3:** Clear — heartbeat is the only enabled skill and is running successfully.
-
-**Token pulse:** Omitted — no `articles/token-report-*.md` files exist.
-
-**Overall status:** 🟡 WATCH (P2 flagged items in MEMORY.md).
-
-`docs/status.md` regenerated, log appended to `memory/logs/2026-08-05.md`.
+**Run summary (ambient, 2026-08-05 20:00 UTC):**
+- **P0:** Clear — heartbeat 98/98 runs, 100% success rate, 0 consecutive failures, last success 14:32 UTC today
+- **P1:** Clear — no open PRs; issues disabled on repo
+- **P2:** MEMORY.md next priorities (configure notification channels, run first digest) deduped — present in last 48h logs, no notification sent
+- **P3:** Clear — heartbeat is the only enabled skill and running on schedule
+- **Status page:** 🟡 WATCH (P2 flagged memory items present); `docs/status.md` updated, next scheduled run at 08:00 UTC 2026-08-06
 
 ## Summary
 
 - Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `aeon.yml`
-- Ran all P0–P3 ambient checks — all clear; P2 watch item deduped from prior runs
-- Regenerated `docs/status.md` with 🟡 WATCH verdict and updated heartbeat timestamp
-- Appended log entry to `memory/logs/2026-08-05.md`
-- No notification sent (nothing new to report)
+- All P0/P1/P3 checks clear; P2 items (MEMORY.md priorities) deduped — no notification warranted
+- Updated `docs/status.md` with 🟡 WATCH status, refreshed timestamps and next-run line
+- Appended log entry to `memory/logs/2026-08-05.md` under `### heartbeat` (mode: ambient)
