@@ -1,16 +1,23 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+All checks complete. Here's the run summary:
 
-**All checks clear:**
-- **P0:** heartbeat running healthy — 96/96 successes, last run 2026-08-04 20:03 UTC (~14h ago, well within 36h self-check window)
-- **P1:** no open PRs; issues disabled on repo
-- **P2:** MEMORY.md "Next Priorities" items (configure notifications, run first digest) — deduped (appeared in last 48h logs), no notification sent
-- **P3:** heartbeat is the only enabled skill and is running on schedule
+**P0:** Clear — heartbeat is the only entry in cron-state.json; last_success=2026-08-05 10:00 UTC, consecutive_failures=0, success_rate=100%, self-check OK.
 
-Status page updated at `docs/status.md` — overall 🟡 WATCH (persistent P2 memory items). Next heartbeat at 14:00 UTC.
+**P1:** Clear — no open PRs; issues are disabled on this repo.
+
+**P2:** MEMORY.md "Next Priorities" (configure notification channels, run first digest) — flagged items present but both appeared in the last 48h of logs; deduped, no notification sent.
+
+**P3:** Clear — heartbeat is the only enabled skill and is running successfully.
+
+**Token pulse:** Omitted — no `articles/token-report-*.md` files exist.
+
+**Overall status:** 🟡 WATCH (P2 flagged items in MEMORY.md).
+
+`docs/status.md` regenerated, log appended to `memory/logs/2026-08-05.md`.
 
 ## Summary
 
-- **Checked:** `memory/cron-state.json` (P0), open PRs/issues via `gh` (P1), `memory/MEMORY.md` (P2), `aeon.yml` vs cron-state (P3)
-- **Updated:** `docs/status.md` regenerated with current timestamp
-- **Created:** `memory/logs/2026-08-05.md` with today's first heartbeat entry
-- **No notification sent** — all flags deduped against last 48h logs
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `aeon.yml`
+- Ran all P0–P3 ambient checks — all clear; P2 watch item deduped from prior runs
+- Regenerated `docs/status.md` with 🟡 WATCH verdict and updated heartbeat timestamp
+- Appended log entry to `memory/logs/2026-08-05.md`
+- No notification sent (nothing new to report)
