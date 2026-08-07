@@ -1,0 +1,97 @@
+{
+  "root": "card",
+  "state": {},
+  "elements": {
+    "card": {
+      "type": "Card",
+      "props": {
+        "title": "P3: heartbeat"
+      },
+      "children": [
+        "main_alert",
+        "separator1",
+        "details"
+      ]
+    },
+    "main_alert": {
+      "type": "Alert",
+      "props": {
+        "title": "Missing Daily Runs on 2026-08-06",
+        "message": "2 of 3 daily runs absent (14:00 + 20:00 UTC not recorded)",
+        "type": "warning"
+      }
+    },
+    "separator1": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "details": {
+      "type": "Stack",
+      "props": {
+        "direction": "vertical",
+        "gap": "md"
+      },
+      "children": [
+        "last_success",
+        "interval_info",
+        "current_run",
+        "separator2",
+        "status"
+      ]
+    },
+    "last_success": {
+      "type": "Stat",
+      "props": {
+        "label": "Last successful run",
+        "value": "09:12 UTC",
+        "delta": "~23h ago",
+        "trend": "down"
+      }
+    },
+    "interval_info": {
+      "type": "Stat",
+      "props": {
+        "label": "Expected interval",
+        "value": "6h"
+      }
+    },
+    "current_run": {
+      "type": "Text",
+      "props": {
+        "text": "Current run resolves this."
+      }
+    },
+    "separator2": {
+      "type": "Separator",
+      "props": {
+        "orientation": "horizontal"
+      }
+    },
+    "status": {
+      "type": "Stack",
+      "props": {
+        "direction": "horizontal",
+        "gap": "sm"
+      },
+      "children": [
+        "status_label",
+        "status_badge"
+      ]
+    },
+    "status_label": {
+      "type": "Text",
+      "props": {
+        "text": "Status page:"
+      }
+    },
+    "status_badge": {
+      "type": "Badge",
+      "props": {
+        "text": "WATCH",
+        "variant": "destructive"
+      }
+    }
+  }
+}
