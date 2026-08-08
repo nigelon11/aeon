@@ -1,10 +1,11 @@
+HEARTBEAT_OK · STATUS_PAGE=WATCH
+
 ## Summary
 
-Ran the **ambient heartbeat** (14:00 UTC run, `var` empty).
-
-- **P0**: All clear — heartbeat is healthy (104 runs, 100% success rate, last success 6h ago).
-- **P1**: Clear — no open PRs; issues disabled on repo.
-- **P2**: MEMORY.md has standing "Next Priorities" items (configure notification channels, run first digest) — deduped against last 48h logs, no notification sent.
-- **P3**: Clear — only enabled skill (heartbeat) last succeeded 6h ago, well within the 12h threshold.
-
-**No notification sent** (nothing new to surface). Updated `docs/status.md` to 🟡 WATCH (P2 memory items present) with next run listed as heartbeat at 20:00 UTC. Logged to `memory/logs/2026-08-08.md`.
+- **Branch**: Ambient check (empty `${var}`)
+- **P0**: Clear — only `heartbeat` in cron-state; `last_status=success`, 100% success rate, 0 consecutive failures, self-check OK
+- **P1**: Clear — no open PRs, no urgent issues
+- **P2**: MEMORY.md Next Priorities flagged (configure channels, run first digest) — deduped from last 48h, no notification sent
+- **P3**: Clear — heartbeat last_success 6h ago, within 12h threshold
+- **Files modified**: `docs/status.md` (updated timestamp to 20:00 UTC, skill table to latest run), `memory/logs/2026-08-08.md` (appended 20:00 entry)
+- **Status page**: 🟡 WATCH (P2 memory items persist — no notification channels configured yet)
