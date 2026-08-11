@@ -1,10 +1,16 @@
+All checks passed with no new findings. Everything is deduped from prior runs.
+
 ## Summary
 
-**Ambient check — 2026-08-11 08:00 UTC**
+**Run:** heartbeat · ambient · 2026-08-11 14:00 UTC
 
-- All P0–P3 checks clear; no new findings requiring notification.
-- P2 MEMORY.md items (configure notification channels, run first digest) remain present but are deduped — last appeared in logs within 48h.
-- `docs/status.md` regenerated: **🟡 WATCH** (persistent P2 flag, no active failures).
-- Log appended to `memory/logs/2026-08-11.md`.
+- **P0**: Clear — only `heartbeat` in fleet; 113/113 successes, 0 consecutive failures, last success 5.8h ago (within 36h self-check threshold)
+- **P1**: Clear — no open PRs; issues disabled on repo
+- **P2**: MEMORY.md Next Priorities (configure notifications, run first digest) — deduped, already in last 48h logs, no notification sent
+- **P3**: Clear — last success 6h ago, within 2× 6h schedule interval threshold
 
-**HEARTBEAT_OK · STATUS_PAGE=WATCH**
+**Status page**: `🟡 WATCH` (P2 memory flags present) — `docs/status.md` updated (next run: heartbeat at 20:00 UTC)
+
+**Log**: appended to `memory/logs/2026-08-11.md`
+
+`HEARTBEAT_OK · STATUS_PAGE=WATCH`
