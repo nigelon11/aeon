@@ -1,11 +1,16 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear. `docs/status.md` updated to reflect the 14:00 UTC run (heartbeat 100% success rate, 116/116 runs, no issues). The 🟡 WATCH verdict persists due to unconfigured notification channels in MEMORY.md — same as prior runs, no new notification sent.
+All checks passed cleanly:
+- **P0:** heartbeat healthy — 117/117 runs succeeded, consecutive_failures=0, last_success ~5h ago (self-check OK)
+- **P1:** no open PRs; issues disabled on repo
+- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) — deduped, no notification sent
+- **P3:** only heartbeat enabled and within schedule interval
+
+Status page updated to `docs/status.md` (🟡 WATCH due to persistent P2 flag). Log entry appended to `memory/logs/2026-08-12.md`.
 
 ## Summary
 
-- **P0:** Clear — heartbeat healthy, `last_success` 6h ago, no consecutive failures
-- **P1:** Clear — no open PRs, issues disabled
-- **P2:** MEMORY.md priorities (notification channels, first digest) deduped — present in last 48h logs
-- **P3:** Clear — only heartbeat enabled, within 2× schedule interval
-- **Files updated:** `docs/status.md`, `memory/logs/2026-08-12.md`
+- **Checked:** `memory/cron-state.json`, `memory/MEMORY.md`, `memory/logs/` (last 2 days), `aeon.yml`, `memory/issues/INDEX.md`, open PRs/issues
+- **Modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-12.md` (appended 20:00 UTC entry)
+- **Notified:** nothing — all findings deduped or clear
+- **Follow-up:** no action required; WATCH state persists until notification channels are configured
