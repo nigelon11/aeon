@@ -1,16 +1,9 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+All checks complete. HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks passed cleanly:
-- **P0:** heartbeat healthy — 117/117 runs succeeded, consecutive_failures=0, last_success ~5h ago (self-check OK)
-- **P1:** no open PRs; issues disabled on repo
-- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) — deduped, no notification sent
-- **P3:** only heartbeat enabled and within schedule interval
-
-Status page updated to `docs/status.md` (🟡 WATCH due to persistent P2 flag). Log entry appended to `memory/logs/2026-08-12.md`.
-
-## Summary
-
-- **Checked:** `memory/cron-state.json`, `memory/MEMORY.md`, `memory/logs/` (last 2 days), `aeon.yml`, `memory/issues/INDEX.md`, open PRs/issues
-- **Modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-12.md` (appended 20:00 UTC entry)
-- **Notified:** nothing — all findings deduped or clear
-- **Follow-up:** no action required; WATCH state persists until notification channels are configured
+**Summary:**
+- **P0:** Clear — heartbeat 118/118 runs, 0 consecutive failures, last success 11.5h ago (well within 36h self-check)
+- **P1:** Clear — no open PRs; repo issues disabled
+- **P2:** MEMORY.md "Next Priorities" (configure channels, run first digest) deduped from last 48h — no notification sent
+- **P3:** Clear — only `heartbeat` enabled; last success within schedule interval
+- **Status page** updated to `docs/status.md` → 🟡 WATCH (P2 flag persists until channels are configured)
+- **Log** appended to `memory/logs/2026-08-13.md`
