@@ -1,13 +1,16 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote docs/status.md
+All checks complete. Here's the summary:
 
 ## Summary
 
-**Ambient check — 2026-08-13 14:02 UTC**
+**Ambient heartbeat — 2026-08-13 20:00 UTC**
 
-- **P0:** Clear — only `heartbeat` in cron-state.json; last_success 08:18 UTC today, consecutive_failures=0, success_rate=100% (119/119); self-check OK.
-- **P1:** Clear — no open PRs; issues disabled on repo.
-- **P2:** MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped, no notification sent.
-- **P3:** Clear — only heartbeat enabled; last_success ~5.7h ago, within 2× the 8h schedule interval.
-- **Status page:** `docs/status.md` updated to 🟡 WATCH (P2 items) with next run at 20:00 UTC.
-- **Log:** appended `### heartbeat (14:00 UTC)` to `memory/logs/2026-08-13.md`.
-- **Notification:** nothing sent (all findings deduped within last 48h).
+| Check | Result |
+|-------|--------|
+| P0 — Failed/stuck skills | ✅ Clear — heartbeat 100% (120/120), 0 consecutive failures, self-check OK |
+| P1 — Stalled PRs / urgent issues | ✅ Clear — no open PRs; issues disabled on repo |
+| P2 — Flagged memory items | ⚠️ Next Priorities (configure channels, run first digest) — deduped from last 48h, no notification sent |
+| P3 — Missing scheduled skills | ✅ Clear — only heartbeat enabled, last run 6h ago (within 16h threshold) |
+
+**Status page:** 🟡 WATCH (P2 flag present) — `docs/status.md` updated, next scheduled run: heartbeat at 08:00 UTC.
+
+No notification sent — nothing new to surface; all findings are deduped within the 48h window.
