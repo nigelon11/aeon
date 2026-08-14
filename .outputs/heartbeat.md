@@ -1,10 +1,15 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH — `docs/status.md` updated (2026-08-14 08:03 UTC). All P0–P3 checks clear; 🟡 WATCH held due to long-standing MEMORY.md Next Priorities items (configure notification channels, run first digest) — fully deduped, no notification sent.
+HEARTBEAT_OK · STATUS_PAGE=WATCH
+
+All checks clear:
+- **P0**: Heartbeat healthy — 122/122 runs, 0 consecutive failures, last success 5h ago
+- **P1**: No open PRs, no urgent issues
+- **P2**: MEMORY.md priorities (configure notifications, run first digest) deduped — already in last 48h logs, no notification sent
+- **P3**: Only heartbeat is enabled; within schedule interval
+
+Status page updated to `🟡 WATCH` (P2 flag: unconfigured notification channels still pending). Next run at 20:00 UTC.
 
 ## Summary
-
-- **P0**: Clear — heartbeat 121/121 runs, 0 consecutive failures, last success 12h ago (within 36h self-check threshold)
-- **P1**: Clear — no open PRs, issues disabled on repo
-- **P2**: MEMORY.md items (configure notification channels, run first digest) deduped from last 48h logs — no notification
-- **P3**: Clear — only `heartbeat` enabled, last success within 2× schedule interval
-- **`docs/status.md`**: regenerated with updated timestamp and skill table
-- **`memory/logs/2026-08-14.md`**: created with this run's entry
+- Read `memory/cron-state.json`, `memory/MEMORY.md`, last 2 days of logs, `aeon.yml`, and `memory/issues/INDEX.md`
+- All P0–P3 checks passed; P2 flag (notification channels + first digest) deduped — no notification sent
+- Regenerated `docs/status.md` (Overall: 🟡 WATCH, Updated: 2026-08-14 14:00 UTC)
+- Appended `### heartbeat (14:00 UTC)` entry to `memory/logs/2026-08-14.md`
