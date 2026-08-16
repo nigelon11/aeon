@@ -1,11 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear. Fleet is healthy — only `heartbeat` is enabled, running 3×/day at 100% success rate (126/126). No failed or stuck skills, no open PRs, no open issues. Status page updated to `docs/status.md` (🟡 WATCH due to standing MEMORY.md next-priorities items, consistent with all recent runs). No notification sent — nothing new to surface.
+All checks clear. Status page updated to `docs/status.md` with the 08:00 UTC timestamp. The 🟡 WATCH verdict persists because MEMORY.md still has unconfigured notification channels and no first digest run — both are recurring P2 items, deduped from notification.
 
 ## Summary
-- **P0**: Clear — heartbeat last_success 2026-08-15 14:06 UTC, consecutive_failures=0, success_rate=100%
-- **P1**: Clear — no open PRs, issues disabled
-- **P2**: MEMORY.md priorities deduped (seen in last 48h), no notification
-- **P3**: Clear — only enabled skill (heartbeat) within schedule cadence
-- **docs/status.md**: Regenerated (Overall: 🟡 WATCH, Updated: 2026-08-15 20:00 UTC)
-- **memory/logs/2026-08-15.md**: Appended 20:00 UTC entry
+
+- **Ran:** ambient fleet check (`${var}` empty)
+- **P0–P3:** all clear; P2 items deduped, no notification sent
+- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-16.md` (created)
+- **Follow-up:** configure a notification channel (Telegram/Discord/Slack) or run a first digest to clear the standing WATCH flag
