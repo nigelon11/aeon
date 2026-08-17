@@ -1,12 +1,15 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear. No notifications sent (all P2 items deduped from prior 48h logs). Updated `docs/status.md` with the 14:00 UTC run timestamp; next scheduled run is heartbeat at 20:00 UTC.
+All checks clear:
+- **P0:** heartbeat healthy — 132/132 runs, 0 consecutive failures, last success 5.7h ago (well within 36h self-check threshold)
+- **P1:** no open PRs; issues disabled on repo
+- **P2:** MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped, no notification sent
+- **P3:** only heartbeat enabled; last success within 2× schedule interval
+
+`docs/status.md` updated (🟡 WATCH due to unconfigured notification channels/first digest — persistent P2 item). Log appended to `memory/logs/2026-08-17.md`. No notification sent (nothing new to surface).
 
 ## Summary
 
-- **P0** — Clear. Heartbeat: 131/131 runs successful, 0 consecutive failures, self-check OK (~6h since last success).
-- **P1** — Clear. No open PRs; issues disabled on repo.
-- **P2** — MEMORY.md next-priorities items present (configure notification channels, run first digest), but deduped from last 48h logs — no notification sent.
-- **P3** — Clear. Only heartbeat enabled; last success ~6h ago, within the 12h (2× 6h-interval) threshold.
-- **Status page** — `docs/status.md` regenerated → 🟡 WATCH (P2 flag from MEMORY.md items).
-- **Log** — Appended `### heartbeat (14:00 UTC)` entry to `memory/logs/2026-08-17.md`.
+- **Ran:** Ambient heartbeat check (20:00 UTC slot)
+- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-17.md` (log appended)
+- **Follow-up:** No action required — configure Telegram/Discord/Slack channels to activate notifications when signal warrants it
