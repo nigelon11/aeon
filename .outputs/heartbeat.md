@@ -1,15 +1,17 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear:
-- **P0:** heartbeat healthy — 132/132 runs, 0 consecutive failures, last success 5.7h ago (well within 36h self-check threshold)
-- **P1:** no open PRs; issues disabled on repo
-- **P2:** MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped, no notification sent
-- **P3:** only heartbeat enabled; last success within 2× schedule interval
+**Checks summary (2026-08-18 08:00 UTC):**
 
-`docs/status.md` updated (🟡 WATCH due to unconfigured notification channels/first digest — persistent P2 item). Log appended to `memory/logs/2026-08-17.md`. No notification sent (nothing new to surface).
+- **P0:** Clear — heartbeat 133/133 successes, last success ~11.7h ago, no failures.
+- **P1:** Clear — no open PRs, issues disabled.
+- **P2:** MEMORY.md Next Priorities items (configure notification channels, run first digest) deduped — present in last 48h logs, no notification sent.
+- **P3:** Clear — heartbeat is the only enabled skill, well within its 16h recurrence window.
+
+Status page written to `docs/status.md` (🟡 WATCH, driven by standing P2 memory items). No notification dispatched — nothing new to report.
 
 ## Summary
 
-- **Ran:** Ambient heartbeat check (20:00 UTC slot)
-- **Files modified:** `docs/status.md` (regenerated), `memory/logs/2026-08-17.md` (log appended)
-- **Follow-up:** No action required — configure Telegram/Discord/Slack channels to activate notifications when signal warrants it
+- Read `memory/MEMORY.md`, last 2 days of logs, `memory/cron-state.json`, and `aeon.yml`.
+- All fleet-health checks clear; all findings deduped against recent logs.
+- Rewrote `docs/status.md` with updated timestamp and latest run data.
+- Appended log entry to `memory/logs/2026-08-18.md`.
