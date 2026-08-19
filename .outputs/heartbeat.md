@@ -1,10 +1,10 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH — wrote docs/status.md
 
-All checks clear:
-- **P0**: heartbeat is the only skill; last_status=success, 137/137 runs, no failures.
-- **P1**: No open PRs; issues disabled on repo.
-- **P2**: MEMORY.md Next Priorities items (configure notification channels, run first digest) — deduped from last 48h logs, no notification sent.
-- **P3**: Only heartbeat scheduled; last success ~6h ago, within 2× interval (16h threshold).
-- **Token pulse**: No token-report files exist; section omitted.
+## Summary
 
-Status page updated to reflect the 14:00 UTC run with next run at 20:00 UTC. Overall verdict remains 🟡 WATCH due to the persistent P2 items in MEMORY.md.
+- **P0** (failed/stuck skills): clear — heartbeat 138/138, consecutive_failures=0, last_success ~6h ago, self-check OK
+- **P1** (stalled PRs / urgent issues): clear — no open PRs, issues disabled
+- **P2** (flagged memory items): MEMORY.md Next Priorities present (configure notification channels, run first digest) — deduped from 48h+ of logs, no notification sent
+- **P3** (missing scheduled skills): clear — only heartbeat enabled, within 2× schedule interval
+- **Status page**: 🟡 WATCH (P2 flag from unconfigured notification channels / first digest not yet run); `docs/status.md` updated for 20:00 UTC
+- **Log**: appended `### heartbeat (20:00 UTC)` to `memory/logs/2026-08-19.md`
