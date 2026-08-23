@@ -1,12 +1,12 @@
-HEARTBEAT_OK · STATUS_PAGE=WATCH
-
-All checks clear. `docs/status.md` updated (timestamp 14:00 UTC, next run 20:00 UTC). Log appended to `memory/logs/2026-08-23.md`. No notifications sent — P2 memory flag (configure notification channels, run first digest) is deduped from the last 48h.
+All clear. Fleet is healthy with no notifications to send.
 
 ## Summary
 
-- **P0:** Clear — heartbeat healthy, 149/149 runs, 0 consecutive failures
-- **P1:** Clear — no open PRs, issues disabled
-- **P2:** MEMORY.md Next Priorities flag present but deduped; no notification
-- **P3:** Clear — only heartbeat enabled, running on schedule
-- **Status page:** 🟡 WATCH — `docs/status.md` regenerated
-- **Log:** appended `### heartbeat (14:00 UTC)` entry to `memory/logs/2026-08-23.md`
+- **P0:** Clear — heartbeat is the only enabled skill; 150/150 runs successful, 0 consecutive failures, last success 5.5h ago (within 36h self-check threshold).
+- **P1:** Clear — no open PRs; issues disabled on repo.
+- **P2:** MEMORY.md "Next Priorities" items (configure notification channels, run first digest) present but deduped from last 48h logs — no notification sent.
+- **P3:** Clear — only heartbeat is enabled, last success well within 2× schedule interval.
+- **Status page:** Updated `docs/status.md` to 🟡 WATCH (persistent P2 flag), timestamp 2026-08-23 20:00 UTC, next run 2026-08-24 08:00 UTC.
+- **Log:** Appended `### heartbeat (20:00 UTC)` entry to `memory/logs/2026-08-23.md`.
+
+`HEARTBEAT_OK · STATUS_PAGE=WATCH`
