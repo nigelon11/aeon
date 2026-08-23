@@ -1,12 +1,12 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear. No notification sent (P2 memory items deduped — "configure notification channels" and "run first digest" have been in logs for >48h). Status page updated to reflect heartbeat's 2026-08-22 20:30 UTC success run; overall verdict stays 🟡 WATCH due to the standing MEMORY.md priorities.
+All checks clear. `docs/status.md` updated (timestamp 14:00 UTC, next run 20:00 UTC). Log appended to `memory/logs/2026-08-23.md`. No notifications sent — P2 memory flag (configure notification channels, run first digest) is deduped from the last 48h.
 
 ## Summary
 
-- **P0**: Clear — heartbeat healthy (148/148, 0 consecutive failures, last success ~12h ago)
-- **P1**: Clear — no open PRs, issues disabled
-- **P2**: Deduped — MEMORY.md Next Priorities unchanged, not re-notified
-- **P3**: Clear — only heartbeat enabled, within schedule threshold
-- **docs/status.md**: Updated (🟡 WATCH, 08:41 UTC timestamp, next run 14:00 UTC)
-- **memory/logs/2026-08-23.md**: Created with ambient log entry
+- **P0:** Clear — heartbeat healthy, 149/149 runs, 0 consecutive failures
+- **P1:** Clear — no open PRs, issues disabled
+- **P2:** MEMORY.md Next Priorities flag present but deduped; no notification
+- **P3:** Clear — only heartbeat enabled, running on schedule
+- **Status page:** 🟡 WATCH — `docs/status.md` regenerated
+- **Log:** appended `### heartbeat (14:00 UTC)` entry to `memory/logs/2026-08-23.md`
