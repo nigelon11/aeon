@@ -1,16 +1,16 @@
 HEARTBEAT_OK · STATUS_PAGE=WATCH
 
-All checks clear:
-- **P0:** Heartbeat healthy — 152/152 runs, 0 consecutive failures, last success ~6h ago
-- **P1:** No open PRs, issues disabled
-- **P2:** MEMORY.md next-priorities items deduped (seen in last 48h logs, no notification sent)
-- **P3:** Only heartbeat enabled; well within schedule threshold
+**Checks (20:00 UTC run):**
+- **P0:** Clear — heartbeat running clean (153/153, 0 consecutive failures, last success 5.6h ago)
+- **P1:** Clear — no open PRs, issues disabled
+- **P2:** MEMORY.md Next Priorities (configure notification channels, run first digest) — deduped, no notification sent
+- **P3:** Clear — only heartbeat enabled; last success well within 2× interval threshold
 
-Status page updated to `docs/status.md` (🟡 WATCH due to pending MEMORY.md items, unchanged from prior runs). Log appended to `memory/logs/2026-08-24.md`.
+**Actions taken:** Regenerated `docs/status.md` (overall: 🟡 WATCH due to P2 flag, next run 08:00 UTC tomorrow), appended log entry to `memory/logs/2026-08-24.md`.
 
 ## Summary
 
-- **Checked:** cron-state.json (P0), PRs/issues (P1), MEMORY.md (P2), aeon.yml vs cron-state (P3)
-- **Updated:** `docs/status.md` — overall 🟡 WATCH, next run 20:00 UTC
-- **Logged:** `memory/logs/2026-08-24.md` under `### heartbeat (14:00 UTC)`
-- **No notification sent** — all findings deduped within 48h window
+- Ran ambient heartbeat check (20:00 UTC, `var` empty)
+- All P0/P1/P3 checks clear; P2 flag persists (unconfigured notification channels) but deduped — no notification sent
+- Updated `docs/status.md` with current fleet state
+- Appended `### heartbeat (20:00 UTC)` entry to `memory/logs/2026-08-24.md`
