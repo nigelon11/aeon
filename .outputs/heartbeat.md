@@ -1,12 +1,12 @@
-All checks clear. `docs/status.md` updated to reflect the 14:49 UTC run (156 total runs, 100% success rate, `🟡 WATCH` due to unconfigured MEMORY.md next-priorities items). Log entry appended. Next scheduled run: heartbeat at 20:00 UTC.
-
-HEARTBEAT_OK · STATUS_PAGE=WATCH
+All clear. HEARTBEAT_OK.
 
 ## Summary
 
-- **P0:** Clear — heartbeat healthy (156 runs, 100% success rate, last success <1h ago)
-- **P1:** Clear — no open PRs, issues disabled
-- **P2:** MEMORY.md next priorities (configure notification channels, run first digest) present but deduped — no notification sent
-- **P3:** Clear — only heartbeat enabled, running on schedule
-- **docs/status.md:** Updated (2026-08-25 14:49 UTC, `🟡 WATCH`)
-- **memory/logs/2026-08-25.md:** Log entry appended
+**Ambient check — 2026-08-26 08:07 UTC**
+
+- **P0 (failed/stuck skills):** Clear — heartbeat is the only enabled skill, 157/157 runs succeeded, last success ~11.5h ago, self-check within 36h threshold.
+- **P1 (PRs/issues):** Clear — no open PRs; issues disabled on repo.
+- **P2 (flagged memory):** MEMORY.md Next Priorities items (configure notification channels, run first digest) remain unflagged — deduped, last reported within 48h, no notification sent.
+- **P3 (missing skills):** Clear — only heartbeat is scheduled; last success well within 2× interval.
+- **Overall status:** 🟡 WATCH (P2 flag from unconfigured notification channels persists).
+- **Files updated:** `docs/status.md`, `memory/logs/2026-08-26.md`.
