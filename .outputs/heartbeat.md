@@ -1,17 +1,10 @@
-Done. All checks are clear.
+HEARTBEAT_OK · STATUS_PAGE=WATCH
+
+All checks passed. No notifications needed — the P2 memory items (configure notification channels, run first digest) were already reported yesterday. `docs/status.md` regenerated with 🟡 WATCH status reflecting those persistent next-priority items.
 
 ## Summary
 
-**Ambient heartbeat check — 2026-08-27 08:00 UTC**
-
-- **P0 (failed/stuck skills):** Clear. Only `heartbeat` is tracked; last_success 2026-08-26T20:11:41Z (~12h ago), 0 consecutive failures, 100% success rate (160/160). Self-check OK.
-- **P1 (stalled PRs / urgent issues):** Clear. No open PRs; issues disabled on repo.
-- **P2 (flagged memory items):** MEMORY.md Next Priorities (configure notification channels, run first digest) present — deduped from last 48h logs, no notification sent.
-- **P3 (missing scheduled skills):** Clear. Only `heartbeat` is enabled; last success within the 2× schedule interval.
-- **Overall verdict:** `🟡 WATCH` (ongoing P2 items in MEMORY.md).
-
-**Files modified:**
-- `docs/status.md` — regenerated with updated timestamp and skill health row.
-- `memory/logs/2026-08-27.md` — created with today's ambient log entry.
-
-No notification sent (all findings deduped against last 48h of logs).
+- **P0/P1/P3**: All clear
+- **P2**: MEMORY.md Next Priorities deduped (within 48h), no notification sent
+- **docs/status.md**: Updated — overall 🟡 WATCH, heartbeat 100% (161/161), no open issues
+- **memory/logs/2026-08-28.md**: Created with ambient run entry
